@@ -1,10 +1,22 @@
-import { Component } from '@angular/core';
+import { KeyValue } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'angular-tricks-tips';
+export class AppComponent implements OnInit {
+
+  items: KeyValue<string, string>[] = [];
+
+  ngOnInit(): void {
+    this.items = [
+      {
+        key: 'HTML TO PDF',
+        value: '/html-to-pdf'
+      }
+    ]
+  }
+
 }
