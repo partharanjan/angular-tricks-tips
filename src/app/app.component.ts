@@ -15,6 +15,10 @@ export class AppComponent implements OnInit {
       {
         key: 'HTML TO PDF',
         value: '/html-to-pdf'
+      },
+      {
+        key: 'HTTP Caching',
+        value: '/http-caching'
       }
     ]
   }

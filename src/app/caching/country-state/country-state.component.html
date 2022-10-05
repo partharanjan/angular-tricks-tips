@@ -1,0 +1,20 @@
+<h2>HTTP Caching</h2>
+<div class="row">
+    <div class="col-4">
+        <div class="form-group">
+            <label>Country</label>
+            <select class="form-control" [(ngModel)]="country" (change)="handleOnCountryChanged()">
+                <option></option>
+                <option *ngFor="let item of countries" [value]="item.code">{{item.name}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="form-group">
+            <label>State</label>
+            <select class="form-control">
+                <option *ngFor="let item of states" [value]="item.code">{{item.name}}</option>
+            </select>
+        </div>
+    </div>
+</div>

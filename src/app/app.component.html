@@ -1,7 +1,9 @@
-<div>
-  <a [routerLink]="item.value" *ngFor="let item of items">{{item.key}}</a>
-  <hr/>
+<div class="container-fluid">
+  <span *ngFor="let item of items">
+    <a [routerLink]="item.value">{{item.key}}</a> |
+  </span>
+  <hr />
 </div>
-<div>
+<div class="container-fluid">
   <router-outlet></router-outlet>
 </div>
